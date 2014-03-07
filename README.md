@@ -1,5 +1,6 @@
 #tomkyle/session
 
+
 A PHP Session helper that stores session data in sub-namespaces.
 
     $_SESSION (PHP superglobal)
