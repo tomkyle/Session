@@ -1,0 +1,21 @@
+{
+    "name":        "tomkyle/session",
+    "type":        "library",
+
+    "description": "PHP Session helper",
+
+    "authors": [
+        {
+            "name":  "Carsten Witt",
+            "email": "tomkyle@posteo.de",
+            "role":  "Developer"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "tomkyle\\Session\\": "src/"
+        }
+    }
+
+}
