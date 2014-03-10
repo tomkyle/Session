@@ -1,6 +1,8 @@
 #tomkyle/session
 
 
+[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/tomkyle/Session/badges/quality-score.png?s=a80068f1af1333ff735c22e65e949c173b7872a0)](https://scrutinizer-ci.com/g/tomkyle/Session/)
+
 A PHP Session helper that stores session data in sub-namespaces.
 
     $_SESSION (PHP superglobal)
