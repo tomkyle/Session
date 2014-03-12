@@ -19,6 +19,9 @@ A PHP Session helper that stores session data in sub-namespaces.
 
 ```php
 <?php
+use \tomkyle\Session\SessionStorage;
+use \MyNamepace\MySessionData;
+
 class MySessionData extends SessionStorage {}
 
 $namespace1 = new MySessionData( "keyword" );
@@ -33,11 +36,17 @@ $namespace3 = new SessionStorage( "keyword" );
 $namespace3->foo = "anything";
 $namespace3->key = "something";
 
-// will print "bar":
+// will both print "bar":
+echo $namespace1->foo;
+// compare old-school:
 echo $_SESSION['MySessionData']['keyword']['foo'];
 
-// will print "baz":
+// will both print "baz":
+echo $namespace2->foo;
+// compare old-school:
 echo $_SESSION['MySessionData']['user']['foo'];
+
+
 
 // will both print "not the same"
 echo ($namespace1->foo == $namespace2->foo)
